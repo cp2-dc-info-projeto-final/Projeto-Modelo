@@ -43,3 +43,35 @@ Salvar as alterações indicadas no staging area é uma operação chamada commi
 ```
 git commit -m 'adicionando arquivo README.md'
 ```
+
+## Se identificando no git
+
+Para enviar seus commits para o GitHub, será necessário se identificar.
+
+### Indicando seu nome
+
+```
+git config --global user.name 'Ygor Canalli'
+```
+
+### Indicando seu e-mail
+
+```
+git config --global user.email 'ygor.canalli@gmail.com'
+```
+
+## Enviando commits para o repositório remoto
+
+Para enviar seus commits para o repositório remoto, que em nosso caso é o GitHub, realizamos uma operação chamada push. Para isso, utilizamos o comando
+
+```
+git push origin master
+```
+
+## Buscando atualizações do repositório remoto
+
+Caso você precisa baixar as alterações do repositório remoto para sua máquina, você precisará realizar uma operação chamada pull. Para isso, utilizamos o comando
+
+```
+git pull
+```
