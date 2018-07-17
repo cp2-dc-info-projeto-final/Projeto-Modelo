@@ -38,7 +38,7 @@ git status
 
 ## Comitando alterações
 
-Salvar as alterações indicadas no staging area é uma operação chamada commit. O commit é como uma fotografia de uma etapa do desenvolvimento do seu código, e uma vez realizado, não poderá ser desfeito. É sempre possível retornar a uma versão anterior de seu código, porém o commit não deixará de fazer parte do histórico de seu projeto. É sempre aconselhável fazer um comentário no commit, para que seja mais fácil identificá-lo futuramente. Para realizar um commit inserindo um comentário, utilize o comando
+Salvar as alterações indicadas no staging area é uma operação chamada commit. O commit é como uma fotografia de uma etapa do desenvolvimento do seu código, e uma vez realizado, não poderá ser desfeito. É sempre possível retornar a uma versão anterior de seu código, porém o commit não deixará de fazer parte do histórico de seu projeto. É sempre aconselhável fazer um comentário no commit, para que seja mais fácil identificá-lo futuramente. Além disso, cada commit deve ser uma operação atômica. Por exemplo, vou fazer um commit apenas para realizar a atualização deste tutorial, nesta parte onde explico sobre atomicidade de um commit. Recomendo clicar em commits no GitHub para ver o histórico de alterações. Clicando neste commit, você poderá ver claramente as diferenças dele para versão anterior. Para realizar um commit inserindo um comentário, utilize o comando
 
 ```
 git commit -m 'adicionando arquivo README.md'
