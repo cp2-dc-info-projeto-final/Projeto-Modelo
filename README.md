@@ -6,10 +6,10 @@ Este documento servirá não somente como um exemplo de como os requisitos dever
 
 ## Inicializando seu repositório
 
-Primeiramente, inicie um repositório em sua máquina utilizando o mesmo nome do repositório criado no GitHub.
+Primeiramente, baixe seu repositório remoto para sua máquina utilizando a URL fornecida no site do GitHub.
 
 ```
-git init exemplo-requisitos
+git clone https://github.com/cp2-dc-info-projeto-final-2018/exemplo-requisitos.git
 ```
 
 Entre na pasta criada para seu repositório com o comando
@@ -18,7 +18,7 @@ Entre na pasta criada para seu repositório com o comando
 cd exemplo-requisitos
 ```
 
-Feito isso, utilize um editor de texto de sua preferência (pessoalmente gosto do Atom) para criar um arquivo chamada `README.md`, onde você deverá fazer uma breve descrição do seu projeto utilizando a linguagem Mark Down.
+Feito isso, utilize um editor de texto de sua preferência (pessoalmente gosto do Atom) para criar/editar um arquivo chamado `README.md`, onde você deverá fazer uma breve descrição do seu projeto utilizando a linguagem Mark Down.
 
 ## Adicionando ao staging area
 
