@@ -1,4 +1,4 @@
-# Especificação de Requisitos
+# Instruções
 
 Este repositório tem por objetivo instruir os alunos de projeto final sobre como deverão realizar sua especificação de requisitos. Toda a documentação do software será deverá ser feita utilizando a linguagem Mark Down, para que ao fim todo o material esteja disponível na página do GitHub do projeto.
 
@@ -75,3 +75,54 @@ Caso você precisa baixar as alterações do repositório remoto para sua máqui
 ```
 git pull
 ```
+
+## Trabalhando com branches
+
+A palavra branch significa galho, ou ramo. Utilizamos branches para viabilizar o tabalho paralelo em diferentes modificações. A idéia é isolar do código principal as modificações que são desenvolvidas, até que estejam prontas, para então levá-las para o código principal. Este código principal, como chamamos, na verdade é um branch chamado `master`. Se não especificamos onde o commit será feito, ele vai para o branch `master`.
+
+Para exercitarmos os branches, primeiramente crie um arquivo `requisitos.md` e comite inserindo o título 'Requisitos'. Lembre de utilizar a linguagem Mark Down.
+
+Criaremos dois branches, um para requisitos funcionais e outro para requisitos não funcionais. Desta forma, podemos dividir o trabalho em duas frentes, ambas adicionando conteúdo ao mesmo arquivo, sem que hajam interferências. Ao final, cada branch será unido de volta ao `master`.
+
+Para criar um novo branch utilize o comando
+
+```
+git branch rf
+```
+
+Para utilizar este branch utilize
+
+```
+git checkout rf
+```
+
+A partir de agora todas os comits irão para o branch `rf` ao invés do `master`. Adicione um subtítulo 'Requisitos Funcionais' e comite. Agora iremos fazer um push para o repositório remoto, criando um novo branch remoto simultaneamente. Repare que o branch estava apenas em seu repositório local, não no remoto.
+
+```
+git push -u origin rf
+```
+
+Agora, vá ao site do GitHub para visualizar seu novo branch. Quando você cria um novo branch, ele terá os mesmos arquivos do branch atual. Então, para criar um branch de requisitos não funcionais independente do de requisitos funcionais, voltaremos ao branch `master`
+
+
+```
+git checkout master
+```
+
+Agora criaremos um novo branch para requisitos não funcionais. É possível criar um branch e passar a utilizá-lo de uma única vez, com o comando
+
+```
+git checkout -b rnf
+```
+
+Agora criamos e estamos trabalhando no branch `rnf`. Repare que nele não há o subtítulo de requisitos funcionais. Crie um subtítulo 'Requisitos Não-funcionais' e comite. Agora vamos fazer um push do nosso branch `rnf` para o repositório remoto.
+
+```
+git push -u origin rnf
+```
+
+A opção `-u` do comando `git push` não apenas cria o branch remoto, mas especifica que toda vez que for feito um push no branch local, ele irá para o branch remoto definido. Assim, nas próximas vezes que estiver fazendo um push a partir do branch local, não será necessário especificar o branch remoto, pois cada branch fica pré-configurado com seu branch remoto.
+
+Agora dividam-se em equipes para criar a especificação de requisitos neste novo arquivo, utilizando a linguagem Mark Down. Cada equipe deverá trabalhar em um dos branches que criamos agora, uma com requisitos funcionais, outra com requisitos não funcionais.
+
+
