@@ -124,3 +124,15 @@ git push -u origin rnf
 A opção `-u` do comando `git push` não apenas cria o branch remoto, mas especifica que toda vez que for feito um push no branch local, ele irá para o branch remoto definido. Assim, nas próximas vezes que estiver fazendo um push a partir do branch local, não será necessário especificar o branch remoto, pois cada branch fica pré-configurado com seu branch remoto.
 
 Agora dividam-se em equipes para criar a especificação de requisitos neste novo arquivo, utilizando a linguagem Mark Down. Cada equipe deverá trabalhar em um dos branches que criamos agora, uma com requisitos funcionais, outra com requisitos não funcionais. Neste repositório há um arquivo `requisitos.md` com um exemplo de conteúdo. Lembrem-se que cada tipo de requisito só deve ser adicionado em um branch. Faça um commit para cada requisito, e ao final realize um `git push`.
+
+## Merges e pull requests
+
+A operação merge, que significa mesclar, se trata de mesclar as alterações de um branch para outro, ou seja, juntar o código que foi feito em branches diferentes. Frequentemente utilizamos esta operação para unir o código de um determinado branch ao `master`.
+
+Em nosso tutorial, e em nosso projeto final, realizaremos os merges através de `pull requests`. Um pull request é uma espécie de pedido de merge, que precisa ser aprovado para que as alterações entrem em vigor. Faremos isso para que toda vez que alguém for unir o código de um branch com suas atualizações ao `master`, outro membro da equipe confira se esté tudo certo.
+
+Para criar um pull request, vá na aba 'Pull requests' no site do GitHub e utilize o botão 'New pull request'. Lá você deverá indicar de onde partem as alterações, e para onde eles serão levadas. Repare na direção da seta para saber de onde para onde o código será mesclado. Tendo concluído uma parte do trabalho, dos funcionais ou não-funcionais (o que finalizar primeiro), crie um Pull request do branch em questão para o `master`. Tendo feito o pull request, a outra dupla deverá ver as alterações e aceitar caso estejam corretas.
+
+### Resolvendo conflitos
+
+Ao tentar realizar um pull request do outro branch para o `master` ocorrerá um conflito, pois existem conteúdos diferentes na terceira linha do arquivio `requisitos.md`. Prossiga à criação do Pull request, e aparecerá um botão para resolver o conflito. Este botão abre um editor de texto com o arquivo conflitante, indicando com marcações os trechos com problemas. Basta editar o arquivo posicionando cada conteúdo em seu devido lugar, e finalizando o GitGub criará um commit para esta alteração, e prosseguirá ao merge com sucesso. Neste repositório existem dois pull requests fechados, um para RF e outro para RNF, confira.
