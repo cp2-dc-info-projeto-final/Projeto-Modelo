@@ -143,6 +143,7 @@ Ao tentar realizar um pull request do outro branch para o `master` ocorrerá um 
 - [Página oficial (ENG)](https://git-scm.com/)
 - [Livro Pro Git (parcialmente traduzido para o português)](https://git-scm.com/book/pt-br/v2)
 - [Guias rápidos e tutoriais do GitHub (ENG)](https://try.github.io/)
+- [Ferramenta visual para aprender Git](http://git-school.github.io/visualizing-git/)
 
 ### Markdown
 - [Guia rápido de Markdown do GitHub (ENG)](https://guides.github.com/features/mastering-markdown/)
