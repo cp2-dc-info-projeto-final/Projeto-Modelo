@@ -1,8 +1,8 @@
 # Instruções
 
-Este repositório tem por objetivo instruir os alunos de projeto final sobre como deverão realizar sua especificação de requisitos. Toda a documentação do software será deverá ser feita utilizando a linguagem Mark Down, para que ao fim todo o material esteja disponível na página do GitHub do projeto.
+Este repositório tem por objetivo instruir os alunos de projeto final sobre como deverão realizar sua especificação de requisitos. Toda a documentação do software será deverá ser feita utilizando a linguagem Markdown, para que ao fim todo o material esteja disponível na página do GitHub do projeto.
 
-Este documento servirá não somente como um exemplo de como os requisitos deverão ser especificados, mas também como referência da linguagem Mark Down e de git.
+Este documento servirá não somente como um exemplo de como os requisitos deverão ser especificados, mas também como referência da linguagem Markdown e de git.
 
 ## Inicializando seu repositório
 
@@ -18,7 +18,7 @@ Entre na pasta criada para seu repositório com o comando
 cd exemplo-requisitos
 ```
 
-Feito isso, utilize um editor de texto de sua preferência (pessoalmente gosto do Atom) para criar/editar um arquivo chamado `README.md`, onde você deverá fazer uma breve descrição do seu projeto utilizando a linguagem Mark Down.
+Feito isso, utilize um editor de texto de sua preferência (pessoalmente gosto do Atom) para criar/editar um arquivo chamado `README.md`, onde você deverá fazer uma breve descrição do seu projeto utilizando a linguagem Markdown.
 
 ## Adicionando ao staging area
 
@@ -80,7 +80,7 @@ git pull
 
 A palavra branch significa galho, ou ramo. Utilizamos branches para viabilizar o tabalho paralelo em diferentes modificações. A idéia é isolar do código principal as modificações que são desenvolvidas, até que estejam prontas, para então levá-las para o código principal. Este código principal, como chamamos, na verdade é um branch chamado `master`. Se não especificamos onde o commit será feito, ele vai para o branch `master`.
 
-Para exercitarmos os branches, primeiramente crie um arquivo `requisitos.md` e comite inserindo o título 'Requisitos'. Lembre de utilizar a linguagem Mark Down.
+Para exercitarmos os branches, primeiramente crie um arquivo `requisitos.md` e comite inserindo o título 'Requisitos'. Lembre de utilizar a linguagem Markdown.
 
 Criaremos dois branches, um para requisitos funcionais e outro para requisitos não funcionais. Desta forma, podemos dividir o trabalho em duas frentes, ambas adicionando conteúdo ao mesmo arquivo, sem que hajam interferências. Ao final, cada branch será unido de volta ao `master`.
 
@@ -123,7 +123,7 @@ git push -u origin rnf
 
 A opção `-u` do comando `git push` não apenas cria o branch remoto, mas especifica que toda vez que for feito um push no branch local, ele irá para o branch remoto definido. Assim, nas próximas vezes que estiver fazendo um push a partir do branch local, não será necessário especificar o branch remoto, pois cada branch fica pré-configurado com seu branch remoto.
 
-Agora dividam-se em equipes para criar a especificação de requisitos neste novo arquivo, utilizando a linguagem Mark Down. Cada equipe deverá trabalhar em um dos branches que criamos agora, uma com requisitos funcionais, outra com requisitos não funcionais. Neste repositório há um arquivo `requisitos.md` com um exemplo de conteúdo. Lembrem-se que cada tipo de requisito só deve ser adicionado em um branch. Faça um commit para cada requisito, e ao final realize um `git push`.
+Agora dividam-se em equipes para criar a especificação de requisitos neste novo arquivo, utilizando a linguagem Markdown. Cada equipe deverá trabalhar em um dos branches que criamos agora, uma com requisitos funcionais, outra com requisitos não funcionais. Neste repositório há um arquivo `requisitos.md` com um exemplo de conteúdo. Lembrem-se que cada tipo de requisito só deve ser adicionado em um branch. Faça um commit para cada requisito, e ao final realize um `git push`.
 
 ## Merges e pull requests
 
