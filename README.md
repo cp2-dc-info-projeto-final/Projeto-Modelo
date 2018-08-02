@@ -1,8 +1,8 @@
 # Instruções
 
-Este repositório tem por objetivo instruir os alunos de projeto final sobre como deverão realizar sua especificação de requisitos. Toda a documentação do software será deverá ser feita utilizando a linguagem Mark Down, para que ao fim todo o material esteja disponível na página do GitHub do projeto.
+Este repositório tem por objetivo instruir os alunos de projeto final sobre como deverão realizar sua especificação de requisitos. Toda a documentação do software deverá ser feita utilizando a linguagem Markdown, para que ao fim todo o material esteja disponível na página do GitHub do projeto.
 
-Este documento servirá não somente como um exemplo de como os requisitos deverão ser especificados, mas também como referência da linguagem Mark Down e de git.
+Este documento servirá não somente como um exemplo de como os requisitos deverão ser especificados, mas também como referência da linguagem Markdown e de git.
 
 ## Inicializando seu repositório
 
@@ -18,7 +18,7 @@ Entre na pasta criada para seu repositório com o comando
 cd exemplo-requisitos
 ```
 
-Feito isso, utilize um editor de texto de sua preferência (pessoalmente gosto do Atom) para criar/editar um arquivo chamado `README.md`, onde você deverá fazer uma breve descrição do seu projeto utilizando a linguagem Mark Down.
+Feito isso, utilize um editor de texto de sua preferência (pessoalmente gosto do [Atom](https://atom.io/)) para criar/editar um arquivo chamado `README.md`, onde você deverá fazer uma breve descrição do seu projeto utilizando a linguagem Markdown.
 
 ## Adicionando ao staging area
 
@@ -78,11 +78,11 @@ git pull
 
 ## Trabalhando com branches
 
-A palavra branch significa galho, ou ramo. Utilizamos branches para viabilizar o tabalho paralelo em diferentes modificações. A idéia é isolar do código principal as modificações que são desenvolvidas, até que estejam prontas, para então levá-las para o código principal. Este código principal, como chamamos, na verdade é um branch chamado `master`. Se não especificamos onde o commit será feito, ele vai para o branch `master`.
+A palavra branch significa galho, ou ramo. Utilizamos branches para viabilizar o tabalho paralelo em diferentes modificações. A ideia é isolar do código principal as modificações que são desenvolvidas, até que estejam prontas, para então levá-las para o código principal. Este código principal, como chamamos, na verdade é um branch chamado `master`. Se não especificamos onde o commit será feito, ele vai para o branch `master`.
 
-Para exercitarmos os branches, primeiramente crie um arquivo `requisitos.md` e comite inserindo o título 'Requisitos'. Lembre de utilizar a linguagem Mark Down.
+Para exercitarmos os branches, primeiramente crie um arquivo `requisitos.md` e comite inserindo o título 'Requisitos'. Lembre de utilizar a linguagem Markdown.
 
-Criaremos dois branches, um para requisitos funcionais e outro para requisitos não funcionais. Desta forma, podemos dividir o trabalho em duas frentes, ambas adicionando conteúdo ao mesmo arquivo, sem que hajam interferências. Ao final, cada branch será unido de volta ao `master`.
+Criaremos dois branches, um para requisitos funcionais e outro para requisitos não funcionais. Desta forma, podemos dividir o trabalho em duas frentes, ambas adicionando conteúdo ao mesmo arquivo, sem que haja interferências. Ao final, cada branch será unido de volta ao `master`.
 
 Para criar um novo branch utilize o comando
 
@@ -123,16 +123,27 @@ git push -u origin rnf
 
 A opção `-u` do comando `git push` não apenas cria o branch remoto, mas especifica que toda vez que for feito um push no branch local, ele irá para o branch remoto definido. Assim, nas próximas vezes que estiver fazendo um push a partir do branch local, não será necessário especificar o branch remoto, pois cada branch fica pré-configurado com seu branch remoto.
 
-Agora dividam-se em equipes para criar a especificação de requisitos neste novo arquivo, utilizando a linguagem Mark Down. Cada equipe deverá trabalhar em um dos branches que criamos agora, uma com requisitos funcionais, outra com requisitos não funcionais. Neste repositório há um arquivo `requisitos.md` com um exemplo de conteúdo. Lembrem-se que cada tipo de requisito só deve ser adicionado em um branch. Faça um commit para cada requisito, e ao final realize um `git push`.
+Agora dividam-se em equipes para criar a especificação de requisitos neste novo arquivo, utilizando a linguagem Markdown. Cada equipe deverá trabalhar em um dos branches que criamos agora, uma com requisitos funcionais, outra com requisitos não funcionais. Neste repositório há um arquivo `requisitos.md` com um exemplo de conteúdo. Lembrem-se que cada tipo de requisito só deve ser adicionado em um branch. Faça um commit para cada requisito, e ao final realize um `git push`.
 
 ## Merges e pull requests
 
 A operação merge, que significa mesclar, se trata de mesclar as alterações de um branch para outro, ou seja, juntar o código que foi feito em branches diferentes. Frequentemente utilizamos esta operação para unir o código de um determinado branch ao `master`.
 
-Em nosso tutorial, e em nosso projeto final, realizaremos os merges através de `pull requests`. Um pull request é uma espécie de pedido de merge, que precisa ser aprovado para que as alterações entrem em vigor. Faremos isso para que toda vez que alguém for unir o código de um branch com suas atualizações ao `master`, outro membro da equipe confira se esté tudo certo.
+Em nosso tutorial, e em nosso projeto final, realizaremos os merges através de `pull requests`. Um pull request é uma espécie de pedido de merge, que precisa ser aprovado para que as alterações entrem em vigor. Faremos isso para que toda vez que alguém for unir o código de um branch com suas atualizações ao `master`, outro membro da equipe confira se está tudo certo.
 
 Para criar um pull request, vá na aba 'Pull requests' no site do GitHub e utilize o botão 'New pull request'. Lá você deverá indicar de onde partem as alterações, e para onde eles serão levadas. Repare na direção da seta para saber de onde para onde o código será mesclado. Tendo concluído uma parte do trabalho, dos funcionais ou não-funcionais (o que finalizar primeiro), crie um Pull request do branch em questão para o `master`. Tendo feito o pull request, a outra dupla deverá ver as alterações e aceitar caso estejam corretas.
 
 ### Resolvendo conflitos
 
-Ao tentar realizar um pull request do outro branch para o `master` ocorrerá um conflito, pois existem conteúdos diferentes na terceira linha do arquivio `requisitos.md`. Prossiga à criação do Pull request, e aparecerá um botão para resolver o conflito. Este botão abre um editor de texto com o arquivo conflitante, indicando com marcações os trechos com problemas. Basta editar o arquivo posicionando cada conteúdo em seu devido lugar, e finalizando o GitGub criará um commit para esta alteração, e prosseguirá ao merge com sucesso. Neste repositório existem dois pull requests fechados, um para RF e outro para RNF, confira.
+Ao tentar realizar um pull request do outro branch para o `master` ocorrerá um conflito, pois existem conteúdos diferentes na terceira linha do arquivo `requisitos.md`. Prossiga à criação do Pull request, e aparecerá um botão para resolver o conflito. Este botão abre um editor de texto com o arquivo conflitante, indicando com marcações os trechos com problemas. Basta editar o arquivo posicionando cada conteúdo em seu devido lugar, e finalizando o GitGub criará um commit para esta alteração, e prosseguirá ao merge com sucesso. Neste repositório existem dois pull requests fechados, um para RF e outro para RNF, confira.
+
+
+## Referências adicionais
+### Git
+- [Página oficial (ENG)](https://git-scm.com/)
+- [Livro Pro Git (parcialmente traduzido para o português)](https://git-scm.com/book/pt-br/v2)
+- [Guias rápidos e tutoriais do GitHub (ENG)](https://try.github.io/)
+
+### Markdown
+- [Guia rápido de Markdown do GitHub (ENG)](https://guides.github.com/features/mastering-markdown/)
+- [Página oficial (ENG)](https://daringfireball.net/projects/markdown/)
