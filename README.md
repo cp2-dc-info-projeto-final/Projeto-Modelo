@@ -18,7 +18,7 @@ Entre na pasta criada para seu repositório com o comando
 cd exemplo-requisitos
 ```
 
-Feito isso, utilize um editor de texto de sua preferência (pessoalmente gosto do Atom) para criar/editar um arquivo chamado `README.md`, onde você deverá fazer uma breve descrição do seu projeto utilizando a linguagem Markdown.
+Feito isso, utilize um editor de texto de sua preferência (pessoalmente gosto do [Atom](https://atom.io/)) para criar/editar um arquivo chamado `README.md`, onde você deverá fazer uma breve descrição do seu projeto utilizando a linguagem Markdown.
 
 ## Adicionando ao staging area
 
