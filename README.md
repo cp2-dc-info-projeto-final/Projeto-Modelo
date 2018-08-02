@@ -136,3 +136,14 @@ Para criar um pull request, vá na aba 'Pull requests' no site do GitHub e utili
 ### Resolvendo conflitos
 
 Ao tentar realizar um pull request do outro branch para o `master` ocorrerá um conflito, pois existem conteúdos diferentes na terceira linha do arquivio `requisitos.md`. Prossiga à criação do Pull request, e aparecerá um botão para resolver o conflito. Este botão abre um editor de texto com o arquivo conflitante, indicando com marcações os trechos com problemas. Basta editar o arquivo posicionando cada conteúdo em seu devido lugar, e finalizando o GitGub criará um commit para esta alteração, e prosseguirá ao merge com sucesso. Neste repositório existem dois pull requests fechados, um para RF e outro para RNF, confira.
+
+
+## Referências adicionais
+### Git
+- [Página oficial (ENG)](https://git-scm.com/)
+- [Livro Pro Git (parcialmente traduzido para o português)](https://git-scm.com/book/pt-br/v2)
+- [Guias rápidos e tutoriais do GitHub (ENG)](https://try.github.io/)
+
+### Markdown
+- [Guia rápido de Markdown do GitHub (ENG)](https://guides.github.com/features/mastering-markdown/)
+- [Página oficial (ENG)](https://daringfireball.net/projects/markdown/)
