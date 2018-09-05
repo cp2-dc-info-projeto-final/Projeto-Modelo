@@ -46,18 +46,11 @@ git commit -m 'adicionando arquivo README.md'
 
 ## Se identificando no git
 
-Para enviar seus commits para o GitHub, será necessário se identificar.
-
-### Indicando seu nome
+Para enviar seus commits para o GitHub, será necessário se identificar informando o seu **nome** e **e-mail**. Isso pode ser feito usando o comando `git config`:
 
 ```
-git config --global user.name 'Ygor Canalli'
-```
-
-### Indicando seu e-mail
-
-```
-git config --global user.email 'ygor.canalli@gmail.com'
+git config user.name 'Ygor Canalli'
+git config user.email 'ygor.canalli@gmail.com'
 ```
 
 ## Enviando commits para o repositório remoto
