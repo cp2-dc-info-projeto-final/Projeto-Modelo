@@ -19,11 +19,10 @@
 5. Morbi efficitur tellus non ligula commodo, non consequat sem interdum.
 
 **Fluxo alternativo:**
-Phasellus vel sapien congue, feugiat turpis quis, finibus felis.
-Suspendisse finibus odio vel tellus aliquet, ac iaculis massa ultrices.
-Donec vestibulum nunc non posuere rhoncus.
-Aliquam eu purus eget elit commodo congue nec at velit.
-Nullam porta nisl eget mauris suscipit elementum.
+1. Phasellus vel sapien congue, feugiat turpis quis, finibus felis.
+2. Suspendisse finibus odio vel tellus aliquet, ac iaculis massa ultrices.
+3. Donec vestibulum nunc non posuere rhoncus.
+4. Aliquam eu purus eget elit commodo congue nec at velit.
    
 ## CDU 02 - Sed non augue
 **Atores:** Beltrano
