@@ -47,6 +47,7 @@ Ao final, o repositório deverá possuir o seguinte conteúdo:
 - Arquivo `entrevista.mp3` contendo a gravação da entrevista na integra
 - Arquivo `schema.sql` contendo o script SQL para criação do banco de dados
 - Arquivo `slides.pdf` contendo os Slides da apresentação
+- Arquivo [`LICENSE`](LICENSE) contendo licenciamento [MIT](https://choosealicense.com/licenses/mit/)
 - Diagrama de casos de uso (modelo editável e imagem)
 - Diagrama de classes (modelo editável e imagem)
 - Modelagem do banco de dados (modelo editável e imagem)
