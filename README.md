@@ -52,3 +52,9 @@ Ao final, o repositório deverá possuir o seguinte conteúdo:
 - Diagrama de classes (modelo editável e imagem)
 - Modelagem do banco de dados (modelo editável e imagem)
 - Pasta `src` contendo todo o código e os demais arquivos necessários para seu funcionamento 
+
+## Link úteis
+
+- [Tutorial de Git](https://github.com/ygorcanalli/git-basics)
+- [Guia rápido de Markdown do GitHub (ENG)](https://guides.github.com/features/mastering-markdown/)
+- [Projetos anteriores](https://github.com/cp2-dc-info-projeto-final)
